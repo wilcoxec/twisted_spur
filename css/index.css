@@ -5,11 +5,87 @@ body {
   height: 100%;
 }
 
+#logo{
+  position: fixed;
+  top: 5px;
+  left: 30px;
+}
+
+#logo img{
+  width: 30%;
+}
+
+#homeLogo img{
+  width: 40%;
+}
+
+#homeLogo{
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+
+#twisted{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  color: white;
+
+}
+
+#brewing{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 10px;
+  color: #800000;
+}
+
+.navContainer {
+  background-color: black;
+  height: 100%;
+  text-align: center;
+}
+
+
+#nav ul{
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+#nav li{
+  display: inline;
+  padding: 15px;
+}
+
+#nav a{
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  color: white;
+
+}
+
+#nav a:hover {
+  color: #800000;
+}
+
+
+
 .contactSection {
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 20px;
 }
+
+
 
 
 #contactHeader {
@@ -24,13 +100,18 @@ body {
 }
 
 #contactInfo {
-  margin-top: 10px;
+  margin-top: 30px;
   font-family: 'Rokkitt', serif;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 #contactInfo a{
   color: black;
+}
+
+#contactInfo a:hover{
+  color: #800000;
 }
 
 #social a{
@@ -38,7 +119,15 @@ body {
 }
 
 #social {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#hoursInfo {
   margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 1px;
 }
 
 #map {
@@ -55,9 +144,9 @@ body {
   padding-bottom: 30px;
 }
 
-
-
-
+#menuSpace{
+  margin-top: 150px;
+}
 
 #menuHeader {
   font-family: 'Oswald', sans-serif;
@@ -67,36 +156,92 @@ body {
   padding-top: 5px;
   border-bottom-style: solid;
   border-top-style: solid;
-  color: black;
+  margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#menuItems{
-  color: black;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Oswald', sans-serif;
+.menuItems{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menuItems a{
   padding-top: 20px;
-
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 50px;
+  color: black;
 }
 
-#aboutMenus {
+.menuItems a:hover{
+  color: #800000;
+}
+
+.aboutMenu {
   font-family: 'Rokkitt', serif;
   letter-spacing: 1px;
   color: black;
   margin-top: 30px;
-}
-
-#menuItems a{
-  color: black;
-  font-size: 18px;
-  text-transform: uppercase;
-
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 #foodImg img {
   width: 100%;
+}
+
+#brewHeader{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+#brewImg img{
+  width: 100%;
+}
+
+#brewTitle{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 20px;
+
+}
+
+#brewDesc{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#brewItems {
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#aboutBrew{
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 30px;
+  margin-left: 10px;  
 }
 
 

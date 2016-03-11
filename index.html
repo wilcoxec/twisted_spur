@@ -18,25 +18,87 @@
 	</head>
 
 	<body>
+		<div id="logo"><img src="spurFade.png"></div>
+		<div class="navContainer">
+			<div class="row" id="nav">
+				<ul class="hidden-xs hidden-sm">
+					<li><a href="#">about</a></li>
+					<li><a href="#">brews</a></li>
+					<li><a href="#">menus</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+
+
+			<div class="homeContainer row">
+				<div id="homeLogo" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4"><img src="spurFade.png"></div>
+				<div id="titleSection" class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+					<div id="twisted">twisted spur</div>
+					<div id="brewing">brewing</div>
+				</div>
+			</div>
+		</div>
 
 
 
-		<div class="row menuSection">
-			<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 menuP">
-			  	<div id="menuHeader">menu</div>
-			  	<div id="menuItems">
-			  		<div><a href="#">brunch</a></div>
-			  		<div><a href="#">lunch</a></div>
-			  		<div><a href="#">dinner</a></div>
-			  		<div><a href="#">drinks</a></div>
-			  	</div>
-			  	<div id="aboutMenus">
-			  		<div>Write something here about the menu. Add the menu times maybe. Menu is subject to change.</div>
-			  	</div>
-		  </div>
+		<div class="row brewSection">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div id="brewHeader">what's brewing</div>
+				<div id="brewTitle">The Name of the Brew</div>
+				<div id="brewDesc">This is where saying of brew goes</div>
+				<div id="brewItems">
+					<div>Season</div>
+					<div>IPA/Amber</div>
+					<div>IBU: 60</div>
+					<div>ABV: 7%</div>
+				</div>
+				<div id="aboutBrew">This is the part where you can add anything you want to say about the brew.
+				You can add a description of the type, flavor, and whatever.</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div id="brewImg"><img src="brew.jpg"></div>
+			</div>
 		</div>
 
 		<div class="row menuSection">
+			<div class="col-xs-12 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5">
+			  	<div id="menuHeader">menu</div>
+		  	</div>
+		</div>
+
+		<div class="hidden-xs col-sm-12 col-md-12">
+			<div id="menuSpace"></div>
+		</div>
+
+		<div class="row menuItems">
+				<div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2">
+					<a href="#">brunch</a>
+			  	</div>
+			  	<div class="col-xs-12 col-sm-2 col-md-2">
+					<a href="#">lunch</a>
+			  	</div>
+			  	<div class="col-xs-12 col-sm-2 col-md-2">
+					<a href="#">dinner</a>
+			  	</div>
+			  	<div class="col-xs-12 col-sm-2 col-md-2">
+					<a href="#">drinks</a>
+			  	</div>	
+		</div>
+
+		<div class="hidden-xs col-sm-12 col-md-12">
+			<div id="menuSpace"></div>
+		</div>
+
+		<div class="row aboutMenu">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+				Write something here about the menu. Add the menu times maybe. Menu is subject to change.
+				Some more random text to take up space.
+			</div>
+		</div>
+		
+
+		<!-- <div class="row menuSection">
 			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 				<div id="slider">
 				  <a href="#" class="control_next">></a>
@@ -48,9 +110,9 @@
 				    	<div id="specialDesc">This is the descrition for todays</div>
 				    </li>
 				    <li>
-				    	<div id="slideTitle">today's special</div>
-				    	<div id="specialTitle">the other special</div>
-				    	<div id="specialDesc">This is the descrition for todays</div>
+				    	<div id="slideTitle">What's brewing</div>
+				    	<div id="specialTitle">the brew</div>
+				    	<div id="specialDesc">This is the descrition for what is brewing</div>
 				    </li>
 				    <li>
 				    	<div id="slideTitle">today's special</div>
@@ -61,30 +123,53 @@
 				  </ul>  
 				</div>
 		  	</div>
-		</div>
+		</div> -->
 
 
 
 		<div id="foodImg"><img src="food.jpg"></div>
 
-		<div class="row contactSection">
-		  <div class="col-sm-12 col-md-5 col-md-offset-1">
-		  	<div id="map"></div>
-		  </div>
+		<div class="hidden-xs col-sm-12 col-md-12">
+			<div id="menuSpace"></div>
+		</div>
 
-		  <div class="col-xs-8 col-sm-6 col-md-5">
-		  	<div id="contactHeader">contact</div>
-		  	<div id="contactInfo">
-		  		<div><a href="https://www.google.com/maps/place/705+Gervais+St,+Columbia,+SC+29201/@33.9993389,-81.0434064,17z/data=!3m1!4b1!4m2!3m1!1s0x88f8bb2de88058d1:0x781280725574af16" target="_blank">705 Gervais Street</a></div>
-		  		<div>Columbia, South Carolina</div>
-		  		<div>+1.234.567.8900</div>
-		  		<div id="social">
-		  			<a href="#"><img src="social.png"></a>
-		  			<a href="#"><img src="social-media.png"></a>
-		  			<a href="#"><img src="socialt.png"></a>
-		  		</div>
+		<div class="row contactSection">
+		  
+			<div class="col-xs-12 col-sm-6 col-md-4">
+			  	<div id="contactHeader">hours</div>
+			  	<div id="contactInfo">
+			  		<div>Monday:  11.00 - 22.30</div>
+			  		<div>Tuesday:  11.00 - 22.30</div>
+			  		<div>Wednesday:  11.00 - 22.30</div>
+			  		<div>Thursday:  11.00 - 22.30</div>
+			  		<div>Friday:  11.00 - 22.30</div>
+			  		<div>Saturday:  11.00 - 22.30</div>
+			  		<div>Sunday:  11.00 - 22.30</div>
+			  	</div>
+
+			  	<div id="hoursInfo">The kitchen closes at this time.</div>
 		  	</div>
-		  </div>
+
+		  	<div class="col-xs-12 col-sm-6 col-md-4">
+			  	<div id="contactHeader">contact</div>
+			  	<div id="contactInfo">
+			  		<div><a href="https://www.google.com/maps/place/705+Gervais+St,+Columbia,+SC+29201/@33.9993389,-81.0434064,17z/data=!3m1!4b1!4m2!3m1!1s0x88f8bb2de88058d1:0x781280725574af16" target="_blank">705 Gervais Street</a></div>
+			  		<div>Columbia, South Carolina</div>
+			  		<div>+1.234.567.8900</div>
+			  		<div id="social">
+			  			<a href="#"><img src="social.png"></a>
+			  			<a href="#"><img src="social-media.png"></a>
+			  			<a href="#"><img src="socialt.png"></a>
+			  		</div>
+			  	</div>
+		  	</div>
+
+		  	<div class="col-sm-12 col-md-4">
+		  		<div id="map"></div>
+		  	</div>
+
+		  
+
 		</div>
 
 
