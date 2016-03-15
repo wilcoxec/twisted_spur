@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+  <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			html, body{
+				height:100%;
+				margin:0;
+			}
+			#splash {
+				width:100%;
+				height:100%;
+				/*background-image: url("./background.png");*/
+				background-color:#202020;
+				position:fixed;
+				top:0;
+				z-index:-300;
+				color:white;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image:url("./background.png");
+
+				
+			}
+			.page {
+				position:relative;
+				height:100%;
+				min-height:100%;
+				width:100%;
+				z-index:1000;
+				background:#282828;
+
+
+			}
+			#secondPage {
+				margin-top:100%;
+				color:#ccc;
+				background-color:#202020;
+				background-repeat: no-repeat;
+			}
+			#secondPage p{
+				color:#ccc;
+				font-family: 'Montserrat Light', arial;
+				font-weight:100;
+				line-height: 3;
+				font-size:15px;
+				text-align: center;
+				
+			}
+			#secondPage #pDiv{
+				height:250px;
+				width:560px;
+				margin-left:auto;
+				margin-right:auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			
+			}
+			
+			#bodyWrapper {
+				position:absolute;
+				height:100%;
+				width:100%;
+			}
+			.logo {
+				width:76px; 
+				height:76px; 
+				margin-left:auto; 
+				margin-right:auto;
+				display:block;
+			}
+
+			hr {
+				width:80px;
+				  display: block;
+				height: 2px;
+				border: 0;
+				border-top: 2px solid #404040;
+				margin: 1em 0;
+				padding: 0;
+				margin-top:20px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.splashImg {
+				margin-left:auto;
+				margin-right:auto;
+				display:block;
+				position: relative;
+				top: 45%;
+				transform: translateY(-45%);
+				
+				
+			}
+				
+			h1 {
+				font-family: 'Oswald';
+				text-align:center;
+				color:#fff;
+				font-size:23px;
+				font-weight: 300;
+				letter-spacing: 1px;
+				margin-top:70px;
+			}
+			.navbar {
+				background-color:#fff;
+				height:80px;
+				font-family:'Oswald';
+				font-weight: 400;
+				font-size:16px;
+				opacity:.8;
+
+				
+			}
+			.navbar .navbar-nav {
+				display: inline-block;
+				float: none;
+
+			  }
+			.navbar-nav li a{
+				line-height: 80px;
+				padding-top:0;
+				padding-bottom:0;
+				color:#4b4b4b !important;
+				letter-spacing: 1px;
+
+				
+			  }
+			.navbar .navbar-collapse {
+				text-align: center;
+			  }
+			.grow{
+				
+				-webkit-transform: scale(1.3);
+				-ms-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+			.nav>li>a {
+				padding-left:25px;
+				padding-right:25px;
+			}
+
+			::selection {background: #a69f8b;}
+			::-moz-selection {background: #a69f8b;}
+		
+		</style>
+	</head>
+	<body>
+	
+	
+	
+	
+	<nav role="navigation" id="navid" class="navbar navbar-default navbar-fixed-top navbarReplaceStyles" >
+		<div class="navbar-header">
+			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+		</div>
+	<!-- Collection of nav links and other content for toggling -->
+		<div id="navbarCollapse" class="collapse navbar-collapse ">
+
+			<ul class="nav navbar-nav"  >
+			 <!-- <li class="active"><a href="#">Home</a></li>-->
+				<li ><a href="#home">ABOUT</a></li>
+				<li><a href="#about">MENU</a></li>
+				<li><a href="#faq">BREWS</a></li>
+				<li><a href="#sponsors">CONTACT</a></li>
+
+			</ul>
+		
+			</div>
+		</nav>
+
+
+
+
+		<div id="bodyWrapper">
+			<div id="splash">
+				<img class="splashImg" src="./splashimg2.png">
+			</div>	
+			
+			<div id="secondPage" class="page">
+				<div id="pDiv">
+				<!--<img class="logo" src="./logo.png">-->
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at dolor placerat tortor efficitur fringilla sed ut velit. In at bibendum nibh. Nulla et eros hendrerit, laoreet dolor vitae, molestie lorem. Donec pellentesque leo tincidunt, bibendum leo at, mollis ipsum. Suspendisse varius vulputate nibh.
+				</p>
+				<hr>
+				</div>
+			</div>
+			<div class="page">Page2</div>
+
+
+		</div>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<script src="./jquery.backstretch.min.js"></script>
+		<script> $("#splash").backstretch("background.png"); </script>
+		<script>
+			(function ($) {
+				  $(document).ready(function(){
+				    
+					// hide .navbar first
+					$(".navbar").hide();
+					
+					// fade in .navbar
+					$(function () {
+						$(window).scroll(function () {
+				            // set distance user needs to scroll before we fadeIn navbar
+							if ($(this).scrollTop() > 100) {
+								$('.navbar').fadeIn();
+							} else {
+								$('.navbar').fadeOut();
+							}
+						});
+
+					
+					});
+
+				});
+				  }(jQuery));
+		</script>
+
+	</body>
+</html>
