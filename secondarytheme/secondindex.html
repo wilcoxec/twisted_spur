@@ -35,18 +35,18 @@
 				min-height:100%;
 				width:100%;
 				z-index:1000;
-				background:#282828;
+				background:#fff;
 
 
 			}
 			#secondPage {
 				margin-top:100%;
 				color:#ccc;
-				background-color:#202020;
+				background-color:#a69f8b;
 				background-repeat: no-repeat;
 			}
 			#secondPage p{
-				color:#ccc;
+				color:#efefef;
 				font-family: 'Montserrat Light', arial;
 				font-weight:100;
 				line-height: 3;
@@ -83,7 +83,7 @@
 				  display: block;
 				height: 2px;
 				border: 0;
-				border-top: 2px solid #404040;
+				border-top: 2px solid #d6cfbc;
 				margin: 1em 0;
 				padding: 0;
 				margin-top:20px;
@@ -120,6 +120,9 @@
 
 				
 			}
+			.navbar-default{
+				border:none;
+			  }
 			.navbar .navbar-nav {
 				display: inline-block;
 				float: none;
@@ -147,7 +150,33 @@
 				padding-left:25px;
 				padding-right:25px;
 			}
-
+			.button {
+  				background-color:#a69f8b;
+  				cursor: pointer;
+    			-o-transition:.3s;
+  				-ms-transition:.3s;
+  				-moz-transition:.3s;
+  				-webkit-transition:.3s;
+				margin:0;
+				width:240px;
+  				color:#fff;
+  				border: 3px solid #FFF;
+  				font-family:"Oswald";
+  				font-style:normal;
+  				margin-left:auto;
+  				margin-right:auto;
+  				position:relative;
+				font-size:15px;
+				line-height:13px;
+				height:51px;
+				letter-spacing:2px;
+				margin-bottom:8px;
+				
+			}
+			.button:hover{
+  				color:#a69f8b;
+  				background-color:#fff;
+			}
 			::selection {background: #a69f8b;}
 			::-moz-selection {background: #a69f8b;}
 		
@@ -193,6 +222,7 @@
 			
 			<div id="secondPage" class="page">
 				<div id="pDiv">
+                <center><input type="submit" value="RESERVATIONS" name="RESERVATIONS" id="mc-embedded-subscribe" class="button"></center>
 				<!--<img class="logo" src="./logo.png">-->
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at dolor placerat tortor efficitur fringilla sed ut velit. In at bibendum nibh. Nulla et eros hendrerit, laoreet dolor vitae, molestie lorem. Donec pellentesque leo tincidunt, bibendum leo at, mollis ipsum. Suspendisse varius vulputate nibh.
@@ -200,7 +230,10 @@
 				<hr>
 				</div>
 			</div>
-			<div class="page">Page2</div>
+			<div class="page">
+            
+            
+            </div>
 
 
 		</div>	
